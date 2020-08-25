@@ -1,4 +1,9 @@
 # WP-FAQ
+### Links:
+- [docker installation](https://docs.docker.com/engine/install/)
+- [vsftpd installation tutorial](https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd)
+- [DO WP(in docker) tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose)
+- [DO WP(on host) tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-18-04)
 ### docker-compose file example:
 ```
 version: '3'
@@ -130,6 +135,10 @@ server {
 - Run docker from user "www-data"
 - Set 755 permission to WP-directory
 - Configure FTP server(in some cases cant install plugins witout ftp)
+### Run docker-compose:
+```sh
+docker-compose up -d
+```
 
 ### How to setup&configure FTP:
 ```sh
@@ -168,4 +177,12 @@ ssl_enable=NO
 www-data
 2nd-ftp_user
 3th-ftp_user
+```
+### How to change main site url in mysql db:
+```sh
+$ mysql -u root -p
+mysql> use wordpress;
+mysql> show tables;
+mysql> UPDATE `wp_options` SET option_value = ‘https://site.com’ WHERE option_name IN (‘siteurl’, ‘home’);
+mysql> exit;
 ```
