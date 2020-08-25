@@ -178,8 +178,10 @@ www-data
 2nd-ftp_user
 3th-ftp_user
 ```
-### How to change main site url in mysql db:
+### How to change main site url in mysql:
 ```sh
+$ docker ps
+$ docker exec -it mysql_container_id /bin/bash
 $ mysql -u root -p
 mysql> use wordpress;
 mysql> show tables;
