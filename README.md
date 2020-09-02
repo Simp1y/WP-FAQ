@@ -185,6 +185,6 @@ $ docker exec -it mysql_container_id /bin/bash
 $ mysql -u root -p
 mysql> use wordpress;
 mysql> show tables;
-mysql> UPDATE `wp_options` SET option_value = 'https://blog.taxod.com' WHERE option_name IN ('siteurl', 'home'); 
+mysql> UPDATE `wp_options` SET option_value = 'https://blog.site.com' WHERE option_name IN ('siteurl', 'home'); 
 mysql> exit;
 ```
