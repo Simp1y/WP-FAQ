@@ -4,7 +4,7 @@
 - [vsftpd installation tutorial](https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd)
 - [DO WP(in docker) tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose)
 - [DO WP(on host) tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-18-04)
-- [DO Postfix tutorial(linux malier)](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-16-04)
+- [DO Postfix tutorial(linux mailer)](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-16-04)
 
 ### docker-compose file example:
 ```
